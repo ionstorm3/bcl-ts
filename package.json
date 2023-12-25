@@ -1,0 +1,35 @@
+{
+  "name": "gwhr-bcl-ts",
+  "author": "Gregory Hawkes-Robinson",
+  "description": "Typescript implementation of some .NET base class library classes",
+  "version": "0.0.1",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionstorm3/bcl-ts.git"
+  },
+  "keywords": [
+    ".NET",
+    "typescript",
+    "base",
+    "class",
+    "library"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ionstorm3/bcl-ts/issues"
+  },
+  "homepage": "https://github.com/ionstorm3/bcl-ts#readme",
+  "dependencies": {
+    "axios": "^1.6.2"
+  }
+}
